@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<link type="text/css" rel="stylesheet" media="screen" href="http://localhost/~mitcheet/librware/static/js/jqt/jqtouch/jqtouch.css">
+<link type="text/css" rel="stylesheet" media="screen" href="http://localhost/~mitcheet/librware/static/css/libmobile.css">
+<link type="text/css" rel="stylesheet" media="screen" href="http://localhost/~mitcheet/librware/static/js/jqt/themes/apple/theme.css">
+<script type="text/javascript" src="http://localhost/~mitcheet/librware/static/js/jquery.js"></script>
+<script type="text/javascript" src="http://localhost/~mitcheet/librware/static/js/jqt/jqtouch/jqtouch.js"></script>
+<script type="text/javascript" src="http://localhost/~mitcheet/librware/static/js/local.js"></script>
+
+
+    <title>List of Libraries</title>
+
+    </head>
+    <body>
+        <div id="home" class="current">
+            <div class="toolbar">
+	   	<h1>Mobile Library Sites</h1>
+            </div>
+
+  	 <ul class="rounded">
+		{% for mylibrary in libraryList %}
+			<li class="forward" ><a target="_blank" href="/site/{{ mylibrary.id }}">{{ mylibrary.libraryName }}</a></li>
+		{% endfor %}
+	</ul>
+<div class="info"> </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,3 @@
+librware_html = contains static files that need to be served out by web server.  Alternaly, Django could be configured to serve out some files.  Others need to be incorporated into the template system
+
+librware_mobile = main app code

@@ -1,0 +1,3 @@
+DEBUG = False
+DEFAULT_FROM_EMAIL = 'erikmitc@erikmitchell.info'
+
